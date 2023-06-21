@@ -1,0 +1,95 @@
+.test_con{
+    padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+.test_head{
+    font-family: 'Aguafina Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FF9F0D;
+}
+
+.test_con h2{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 3em;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    
+}
+
+.test_body{
+    width: 35em;
+    background-color: #FFFFFF;
+    color: #FF9F0D;
+    padding: 3em;
+
+    position: relative;
+}
+
+.test_body section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test_body img{
+    position: absolute;
+    top: -4em;
+    left: 35%;
+}
+
+.test_body p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+section{
+    margin-top: 2em;
+}
+
+.test_colum{
+    text-align: center;
+    
+}
+
+.test_circle_con{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.test_circle{
+    width: 0.5em;
+    height: 0.5em;
+    background-color: #FF9F0D;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+@media screen and (max-width: 500px){
+    .test_body img{
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .test_body img{
+        left: 25%;
+    }
+}

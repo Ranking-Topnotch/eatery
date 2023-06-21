@@ -1,0 +1,74 @@
+.chef_con{
+    padding: 1.5rem 5rem 1.5rem 5rem; 
+}
+
+.chef_head{
+    font-family: 'Aguafina Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #FF9F0D;
+}
+
+.chef_con h2{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.chef_main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.chef_m{
+    position: relative;
+}
+
+.chef_sec{
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    color: black;
+    width: 8em;
+    padding: 1em;
+}
+
+.chef_sec h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.chef_sec p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 1110px) {
+    .chef_main{
+        justify-content: center;
+    }
+
+    .chef_m{
+        padding: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .chef_m img{
+        width: 100%;
+    }
+}

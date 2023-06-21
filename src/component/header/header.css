@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Poppins&display=swap');
+
+
+header{
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.head_line{
+    height: 15em;
+    background-color: white;
+    width: 1px;
+}
+
+.head_media{
+    display: flex;
+    flex-direction: column;
+}
+
+.head_s{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.twi{
+    color: #FF9F0D;
+}
+
+
+.header__2 h3{
+    
+    font-family: 'Aguafina Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FF9F0D;
+
+}
+
+.header__2 h2{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+}
+
+.header__2 p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 28em;
+}
+
+.head_button{
+    text-decoration: none;
+    color: white;
+    padding: 1em 2em;
+    background-color: #FF9F0D;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1420px) {
+    .header_image{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        padding: 1.5rem 5rem 1.5rem 5rem;
+        flex-direction: column;
+    }
+    .header__1{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 616px) {
+    header{
+        padding: 1.5rem 5rem 1.5rem 5rem;
+        flex-direction: column;
+    }
+    .header__2 p{
+        width: 18em;
+    }
+    
+}

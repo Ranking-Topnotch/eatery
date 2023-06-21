@@ -1,0 +1,57 @@
+.food_con{
+    padding: 1.5rem 5rem 1.5rem 5rem; 
+    margin-top: 2em;
+}
+
+.food_con h3{
+    font-family: 'Aguafina Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FF9F0D;
+    text-align: center;
+}
+
+.food_con h2{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+.food_con div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    
+}
+
+.food_con div img{
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 1080px) {
+    .food_con div{
+        justify-content: space-evenly;
+    }
+
+    .food_con div img{
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .food_con div img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .food_con div img{
+        width: 100%;
+    }
+}
