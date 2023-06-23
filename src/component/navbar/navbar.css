@@ -80,7 +80,7 @@ Link{
 }
 
 
-@media screen and (max-width: 960px ) {
+@media screen and (max-width: 960px) {
     .navigation{
         display: block;
     }
@@ -115,6 +115,17 @@ Link{
 
     .closed{
         display: none;
+    }
+}
+
+@media screen and (max-width: 430px){
+    input{
+        width: 6em;
+        margin-right: 1em;
+    } 
+
+    .navbar_closed{
+        width: 4em;
     }
 }
 

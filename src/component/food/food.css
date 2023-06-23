@@ -1,6 +1,6 @@
 .food_con{
     padding: 1.5rem 5rem 1.5rem 5rem; 
-    margin-top: 2em;
+    margin-block: 2em;
 }
 
 .food_con h3{
@@ -32,6 +32,11 @@
 
 .food_con div img{
     margin-top: 1em;
+    transition: all 0.3s ease-in;
+}
+
+.food_con div img:hover{
+    transform: translateY(10px);
 }
 
 @media screen and (max-width: 1080px) {
@@ -53,5 +58,16 @@
 @media screen and (max-width: 600px){
     .food_con div img{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .food_con h2{
+        font-size:  34px;
+        line-height: 35px;
+    }
+
+    .food_con div{
+        margin-top: 1em;
     }
 }

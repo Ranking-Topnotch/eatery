@@ -1,5 +1,6 @@
 .test_con{
     padding: 1.5rem 3rem 1.5rem 3rem;
+    margin-bottom: 2em;
 }
 
 .test_head{
@@ -85,6 +86,11 @@ section{
 @media screen and (max-width: 500px){
     .test_body img{
         left: 30%;
+    }
+
+    .test_con h2{
+        font-size:  34px;
+        line-height: 35px;
     }
 }
 

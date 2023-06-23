@@ -65,6 +65,10 @@
     border-radius: 30px;
 }
 
+.about_button:hover{
+    background-color: #f4b14e;
+}
+
 .about__con img{
     width: 100%;
 }
@@ -97,6 +101,18 @@
     }
     .about__con{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about_sec1 h2{
+        font-size:  34px;
+        line-height: 35px;
+    }
+
+    .about_button{
+        padding: 0.7em 1.5em;
+        border-radius: 30px;
     }
 }
 
