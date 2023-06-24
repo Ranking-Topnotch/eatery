@@ -30,7 +30,7 @@ const chefData = [
 const Chef = () => {
     const chefs = chefData.map(chef => {
         return <div className='chef_m'>
-            <img src={chef.img} />
+            <img src={chef.img} alt="Chef preparing a meal"/>
             <section className='chef_sec'>
                 <h3>{chef.name}</h3>
                 <p>{chef.position}</p>
