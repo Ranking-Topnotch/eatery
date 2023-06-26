@@ -84,6 +84,10 @@ section{
 }
 
 @media screen and (max-width: 500px){
+    .test_con{
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
     .test_body img{
         left: 30%;
     }

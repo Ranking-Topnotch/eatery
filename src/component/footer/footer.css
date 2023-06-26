@@ -200,6 +200,12 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .footer__container{
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .footer__con{
         justify-content: flex-start;

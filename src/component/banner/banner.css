@@ -54,4 +54,25 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .banner{
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
+    .banner_con div p{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 0.1em;
+    }
+
+    .banner_con div h3{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 25px;
+        margin-top: 0.1em;
+        margin-bottom: 1em;
+    }
+}
+
 

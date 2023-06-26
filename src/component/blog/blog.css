@@ -88,9 +88,13 @@
 }
 
 @media screen and (max-width: 500px) {
+    .blog_sec{
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
     .blog_sec2{
         padding: 0 2em 1em 2em;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
     .blog_sub{
         font-size:  34px;

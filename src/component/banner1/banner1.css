@@ -81,6 +81,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    .banner1_con{
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }   
+
     .banner1 h2{
         font-size:  34px;
         line-height: 35px;

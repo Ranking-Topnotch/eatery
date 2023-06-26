@@ -118,6 +118,12 @@ Link{
     }
 }
 
+@media screen and (max-width: 500px) {
+   .nav__con{
+    padding: 1.5rem 2rem 1.5rem 2rem;
+   } 
+}
+
 @media screen and (max-width: 430px){
     input{
         width: 6em;
