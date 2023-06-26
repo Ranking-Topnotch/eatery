@@ -108,6 +108,10 @@
     .about__con{
         padding: 1.5rem 2rem 1.5rem 2rem;
     }
+
+    .about_img1{
+        display: none;
+    }
     .about_sec1 h2{
         font-size:  34px;
         line-height: 35px;

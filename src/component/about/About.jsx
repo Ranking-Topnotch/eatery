@@ -37,7 +37,7 @@ const About = () => {
 
             <div className='about_im'>
                 <img src={Unsplash1} alt='cook1' className='about_img'/>
-                <img src={Unsplash2} alt='cook2' />
+                <img src={Unsplash2} alt='cook2' className='about_img1' />
             </div>
         </section>
     </div>
