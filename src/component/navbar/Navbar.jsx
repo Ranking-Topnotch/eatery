@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiSearch, FiShoppingCart } from 'react-icons/fi'
 import { AiOutlineAlignLeft } from 'react-icons/ai'
+import { BsPerson } from 'react-icons/bs'
 import { FaTimes } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 import './navbar.css'
@@ -12,7 +13,6 @@ const Navbar = () => {
     setNav(prev => !prev)
   }
 
-  console.log(nav)
   return (
     <div className='nav__con'>
       <h2 className='nav__header'><span>Food</span>tuck</h2>
@@ -23,12 +23,12 @@ const Navbar = () => {
       <nav className={nav ? 'navbar_con_o' : 'navbar_con_c'}>
         <ul className={nav ? 'navbar_open' : 'navbar_closed'}>
           <NavLink end className={({isActive}) => isActive ? 'nav__active' : null}><li>Home</li></NavLink>
-          <NavLink className={({isActive}) => isActive ? 'nav__active' : null}><li>Menu</li></NavLink>
-          <NavLink className={({isActive}) => isActive ? 'nav__active' : null}><li>Blog</li></NavLink>
-          <NavLink className={({isActive}) => isActive ? 'nav__active' : null}><li>Page</li></NavLink>
-          <NavLink className={({isActive}) => isActive ? 'nav__active' : null}><li>About</li></NavLink>
-          <NavLink className={({isActive}) => isActive ? 'nav__active' : null}><li>Shop</li></NavLink>
-          <NavLink className={({isActive}) => isActive ? 'nav__active' : ""}><li>Contact</li></NavLink>
+          <NavLink to='menu' className={({isActive}) => isActive ? 'nav__active' : null}><li>Menu</li></NavLink>
+          <NavLink to='shop' className={({isActive}) => isActive ? 'nav__active' : null}><li>Shop</li></NavLink>
+          <NavLink to='mainBlog' className={({isActive}) => isActive ? 'nav__active' : null}><li>Blog</li></NavLink>
+          <NavLink to='mainAbout' className={({isActive}) => isActive ? 'nav__active' : null}><li>About</li></NavLink>
+          <NavLink to='mainChef' className={({isActive}) => isActive ? 'nav__active' : null}><li>Chef</li></NavLink>
+          <NavLink to='FAQ' className={({isActive}) => isActive ? 'nav__active' : ""}><li>FAQ</li></NavLink>
         </ul>
 
         <div className='nav__con-right'>
@@ -38,6 +38,7 @@ const Navbar = () => {
           </section>
             
           <main>
+            <BsPerson />
             <FiShoppingCart />
           </main>
 

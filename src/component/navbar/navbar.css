@@ -121,7 +121,12 @@ Link{
 @media screen and (max-width: 500px) {
    .nav__con{
     padding: 1.5rem 2rem 1.5rem 2rem;
-   } 
+   }
+   
+   main{
+    margin-left: 0.3em;
+    cursor: pointer;
+   }
 }
 
 @media screen and (max-width: 430px){
