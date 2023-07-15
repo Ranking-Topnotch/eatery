@@ -1,0 +1,132 @@
+.shop_con{
+    padding: 1.5rem 5rem 1.5rem 5rem;
+}
+
+.shop_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shop_item a{
+    text-decoration: none;
+    color: black;
+}
+
+.shop_list div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.shop_list{
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 10px;
+    background-color: #FF9F0D;
+}
+
+.shop_list img{
+    width: 100%;
+}
+
+.description{
+    max-width: 18em;
+}
+
+.shop_con span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 0.5em;
+    color: #ffffff;
+}
+
+.shop_con select{
+    background-color: #FF9F0D;
+    color: white;
+    border: 0px;
+    outline: 0px;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.shopDetail_con{
+    padding: 1.5rem 5rem 1.5rem 5rem;
+}
+
+.shopDetail{
+    display: flex;
+    margin-top: 1em;
+}
+
+.shopDetail img{
+    margin-right: 1em;
+    width: 50%;
+}
+
+.shopDetail_sub{
+    width: 50em;
+}
+
+.shopDetail h2{
+    font-family: Helvetica;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.shopDetail h3{
+    color: whitesmoke;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.shopDetail h4{
+    margin-top: 1em;
+    color: #FF9F0D;
+    cursor: pointer;
+}
+
+.shopDetail_con a{
+    color: #FF9F0D;
+}
+
+@media screen and (max-width: 1100px) {
+    .shopDetail{
+        flex-direction: column;
+    }
+
+    .shopDetail img{
+        width: 100%;
+    }
+
+    .shopDetail_sub{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .shop_con{
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
+    .shopDetail_con{
+        padding: 1.5rem 2rem 1.5rem 2rem;
+    }
+
+    .shopDetail h2{
+        font-family: Helvetica;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+    }
+}
+
+
+

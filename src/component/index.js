@@ -18,6 +18,8 @@ export { default as MainChef } from './mainChef/MainChef'
 export { default as MainBlog } from './mainBlog/MainBlog'
 export { default as FAQ } from './FAQ/FAQ'
 export { default as Shop } from './shop/Shop'
+export { default as ShopDetail } from './shop/ShopDetail'
+
 
 
 
