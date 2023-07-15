@@ -4,7 +4,7 @@ import './shop.css'
 
 const Shop = () => {
   const [shop, setShop] = React.useState([])
-  const [hoveredItem, sethoveredItem] = React.useState(null)
+  const [hoveredItem, sethoveredItem] = React.useState('')
 
   React.useEffect(() => {
     fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
@@ -17,7 +17,7 @@ const Shop = () => {
   }
 
   const handleMouseLeave = () => {
-    sethoveredItem(null)
+    sethoveredItem('')
   }
 
   const shopItems = shop.map(shopItem => {
