@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { add } from '../store/cartSlice'
 import './shop.css'
 
 const Shop = () => {
   const [shop, setShop] = React.useState([])
+  const dispatchGoods = useDispatch()
   const [hoveredItem, sethoveredItem] = React.useState('')
 
   React.useEffect(() => {
@@ -11,6 +14,10 @@ const Shop = () => {
     .then(res => res.json())
     .then(data => setShop(data.categories))
   }, [])
+
+  const addToCart = shopItem => {
+      dispatchGoods(add(shopItem))
+  }
 
   const handleMouseOver = (itemId) => {
     sethoveredItem(itemId)
@@ -22,7 +29,8 @@ const Shop = () => {
 
   const shopItems = shop.map(shopItem => {
    
-    return <Link to={`/shop/${shopItem.idCategory}`}>
+    return <div>
+      <Link to={`/shop/${shopItem.idCategory}`}>
       <div className='shop_list'
       onMouseOver={() => handleMouseOver(shopItem.idCategory)} onMouseLeave={handleMouseLeave}
       >
@@ -32,8 +40,11 @@ const Shop = () => {
           <p>${shopItem.idCategory}0</p>
         </div>
         {hoveredItem === shopItem.idCategory && <h3 className='description'>{shopItem.strCategoryDescription}</h3> }
+        
     </div>
     </Link>
+    <button onClick={() => addToCart(shopItem)}>Add to cart</button>
+    </div>
   })
   return (
     <div className='shop_con'>
@@ -49,7 +60,7 @@ const Shop = () => {
         </select>
       </div>
 
-      <div  className='shop_item'>
+      <div className='shop_item'>
         {shopItems}
       </div>
     </div>

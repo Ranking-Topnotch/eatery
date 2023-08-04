@@ -1,12 +1,14 @@
 import React from 'react'
 import { FiSearch, FiShoppingCart } from 'react-icons/fi'
-import { AiOutlineAlignLeft } from 'react-icons/ai'
+import { AiOutlineAlignLeft } from 'react-icons/ai' 
 import { BsPerson } from 'react-icons/bs'
 import { FaTimes } from 'react-icons/fa'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 import './navbar.css'
 
 const Navbar = () => {
+  const cartProduct = useSelector(state => state.goods)
   const [nav, setNav] = React.useState(true)
 
   function navFlip(){
@@ -37,9 +39,10 @@ const Navbar = () => {
             <FiSearch />
           </section>
             
-          <main>
+          <main className='cart_section'>
             <BsPerson />
-            <FiShoppingCart />
+            <Link className='cart_icon' to='cart'><FiShoppingCart /></Link>
+            {cartProduct.length > 0 && <p>{cartProduct.length}</p>}
           </main>
 
         </div>

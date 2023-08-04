@@ -4,6 +4,10 @@
     padding: 1.5rem 5rem 1.5rem 5rem;
 }
 
+.nav__con a{
+    text-decoration: none;
+}
+
 .nav__header{
     text-align: center;
     font-family: 'Helvetica';
@@ -49,13 +53,16 @@ nav ul li{
     color: #FFFFFF;
 }
 
+.nav__active li{
+    color: #FF9F0D;
+    transform: translate(1.1px);
+}
+
 .nav__con-right{
     display: flex;
     justify-content: center;
     align-items:  center;
 }
-
-
 
 .nav__section{
     border: 1px solid #FF9F0D;
@@ -75,8 +82,26 @@ input{
     outline: none; 
 }
 
+.cart_section{
+    position: relative;
+}
+
 Link{
     text-decoration: none;
+}
+
+.cart_icon{
+    color: white;
+}
+
+.cart_section p{
+    position: absolute;
+    color: white;
+    background-color: #FF9F0D;
+    padding: 0.1em 0.2em;
+    border-radius: 5px;
+    top: -1em;
+    right: -0.3em;
 }
 
 
