@@ -1,0 +1,51 @@
+.faq{
+    padding: 1.5rem 5rem 1.5rem 5rem;  
+    background-color: #fff;
+    color: black;
+}
+
+.faq h3{
+    color: var(--gray-1, #333);
+    font-family: Helvetica;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+}
+
+.faq_p{
+    color: var(--gray-2, #4F4F4F);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 2em;
+}
+
+.faq_sec{
+    display: flex;
+    justify-content: center;
+}
+
+.faq_sec div:first-child{
+    margin-right: 2em;
+}
+
+.faq_sec h4{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 0.5em;
+}
+
+.showe{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hide{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
