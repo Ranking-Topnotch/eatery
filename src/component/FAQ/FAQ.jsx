@@ -1,5 +1,5 @@
 import React from 'react'
-import './faq.css'
+import './FAQ.css'
 
 const FAQ = () => {
   return (
