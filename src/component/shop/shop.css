@@ -26,6 +26,17 @@
     background-color: #FF9F0D;
 }
 
+.add_button{
+    padding: 0.8em;
+    background-color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
 .shop_list img{
     width: 100%;
 }

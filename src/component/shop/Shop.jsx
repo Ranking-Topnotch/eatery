@@ -43,7 +43,7 @@ const Shop = () => {
         
     </div>
     </Link>
-    <button onClick={() => addToCart(shopItem)}>Add to cart</button>
+    <button onClick={() => addToCart(shopItem)} className='add_button'>Add to cart</button>
     </div>
   })
   return (

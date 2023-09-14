@@ -38,7 +38,7 @@ const Cart = () => {
               
           </div>
           </Link>
-          <button onClick={() => removeCart(shopItem.idCategory)}>Remove</button>  
+          <button onClick={() => removeCart(shopItem.idCategory)} className='add_button'>Remove</button>  
         
     </div>
     })

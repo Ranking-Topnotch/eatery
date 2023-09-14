@@ -24,13 +24,13 @@ const Navbar = () => {
       </div>
       <nav className={nav ? 'navbar_con_o' : 'navbar_con_c'}>
         <ul className={nav ? 'navbar_open' : 'navbar_closed'}>
-          <NavLink end className={({isActive}) => isActive ? 'nav__active' : null}><li>Home</li></NavLink>
-          <NavLink to='menu' className={({isActive}) => isActive ? 'nav__active' : null}><li>Menu</li></NavLink>
-          <NavLink to='shop' className={({isActive}) => isActive ? 'nav__active' : null}><li>Shop</li></NavLink>
-          <NavLink to='mainBlog' className={({isActive}) => isActive ? 'nav__active' : null}><li>Blog</li></NavLink>
-          <NavLink to='mainAbout' className={({isActive}) => isActive ? 'nav__active' : null}><li>About</li></NavLink>
-          <NavLink to='mainChef' className={({isActive}) => isActive ? 'nav__active' : null}><li>Chef</li></NavLink>
-          <NavLink to='FAQ' className={({isActive}) => isActive ? 'nav__active' : ""}><li>FAQ</li></NavLink>
+          <NavLink onClick={() => {navFlip()}} end className={({isActive}) => isActive ? 'nav__active' : null}><li>Home</li></NavLink>
+          <NavLink onClick={() => {navFlip()}} to='menu' className={({isActive}) => isActive ? 'nav__active' : null}><li>Menu</li></NavLink>
+          <NavLink onClick={() => {navFlip()}} to='shop' className={({isActive}) => isActive ? 'nav__active' : null}><li>Shop</li></NavLink>
+          <NavLink onClick={() => {navFlip()}} to='mainBlog' className={({isActive}) => isActive ? 'nav__active' : null}><li>Blog</li></NavLink>
+          <NavLink onClick={() => {navFlip()}} to='mainAbout' className={({isActive}) => isActive ? 'nav__active' : null}><li>About</li></NavLink>
+          <NavLink onClick={() => {navFlip()}} to='mainChef' className={({isActive}) => isActive ? 'nav__active' : null}><li>Chef</li></NavLink>
+          <NavLink onClick={() => {navFlip()}} to='FAQ' className={({isActive}) => isActive ? 'nav__active' : ""}><li>FAQ</li></NavLink>
         </ul>
 
         <div className='nav__con-right'>
